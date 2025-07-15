@@ -26,11 +26,22 @@
             text-align: center;
             width: 300px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: float 3s ease-in-out infinite;
         }
 
         .card:hover {
             transform: scale(1.05);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         /* Text styles */
@@ -58,8 +69,7 @@
     <script>
         // JavaScript code if needed in future
         console.log('Hello, World!');
-	// testing
+        // testing
     </script>
 </body>
 </html>
-
